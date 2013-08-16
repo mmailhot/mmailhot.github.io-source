@@ -1,0 +1,64 @@
+$headimg: url('../img/bg.jpg');
+
+
+.tilted__header{
+	padding:5px;
+	height:500px;
+	height:50vh;
+	background: $headimg center center;
+	background-size: cover;
+	display:table;
+	width:100%;
+	h1{
+		display:table-cell;
+		width:100%;
+		vertical-align: middle;
+		color:#fff;
+		font-weight: 400;
+		font-size: 6vh;
+		text-align: center;
+	}
+	background-attachment: fixed;
+	.tilted__header__small{
+		display: block;
+		font-size: 24px;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+}
+
+
+
+.portfolio ul{
+	list-style:none;
+	padding:0;
+}
+
+.portfolio_item{
+	overflow:hidden;
+	position:relative;
+	&:hover{
+		@include transform(scale(1.1));
+	}
+}
+
+.portfolio_item p{
+	padding:5px;
+	position: absolute;
+	top:20px;
+	left:0px;
+	background:$light_background;
+	color:$dark_gray;
+}
+
+.back-header{
+	color:#fff;
+	text-decoration: none;
+	&:before{
+		content:"\00ab   ";
+	}
+}
+
+.portfolio-image{
+	width:100%;
+}

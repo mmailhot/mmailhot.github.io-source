@@ -1,0 +1,35 @@
+$btn_colour:#06c;
+$btn_highlight:#006edd;
+$btn_active:#005dbb;
+
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+p{
+	font-size: 16px;
+	line-height: 1.4em;
+}
+.tilted__content{
+	.tilted__content__title{
+		font-size: 48px;
+		margin:20px;
+		display:block;
+		text-align: center;
+		border:7px solid;
+	}
+}
+.btn{
+	display: inline-block;
+	padding:7px;
+	background:$btn-colour;
+	color:#fff;
+	text-decoration: none;
+	font-weight: 600;
+	&:hover{
+		background: $btn_highlight;
+	}
+	&:active{
+		background: $btn_active;
+	}
+}
